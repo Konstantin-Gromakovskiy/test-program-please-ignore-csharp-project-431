@@ -37,6 +37,7 @@ Please enter the game number and press Enter.
 3 - Calc
 4 - GCD
 5 - Progression
+6 - Prime
 0 - Exit
 ```
 
@@ -65,6 +66,38 @@ Please enter the game number and press Enter.
 Пользователю показывается арифметическая прогрессия из 10 чисел, в которой одно число заменено на `..`, нужно найти пропущенное число. Например, для `5 8 11 .. 17 20 23 26 29 32` правильный ответ — `14`. Чтобы победить, нужно дать три правильных ответа подряд.
 
 <!-- Добавьте запись asciinema игры Progression -->
+
+#### Простое ли число? (Prime)
+
+Пользователю показывается случайное число, нужно ответить `yes`, если число простое, и `no` — если нет. Чтобы победить, нужно дать три правильных ответа подряд.
+
+<!-- Добавьте запись asciinema игры Prime -->
+
+Пример выигрыша:
+
+```
+Answer 'yes' if given number is prime. Otherwise answer 'no'.
+Question: 19
+Your answer: yes
+Correct!
+Question: 63
+Your answer: no
+Correct!
+Question: 79
+Your answer: yes
+Correct!
+Congratulations, Kostya!
+```
+
+Пример проигрыша:
+
+```
+Answer 'yes' if given number is prime. Otherwise answer 'no'.
+Question: 77
+Your answer: yes
+'yes' is wrong answer ;(. Correct answer was 'no'
+Let's try again, Kostya
+```
 
 ---
 
