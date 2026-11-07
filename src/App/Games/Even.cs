@@ -21,29 +21,12 @@ public static class Even
         Console.WriteLine($"Hello {name}!");
         Console.WriteLine("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
-        for (var i = 0; i < 3; i++)
-        {
-            var radomNumber = GenerateRandomNumber(0, 100);
+        var parameter = Enumerable
+            .Range(0, int.MaxValue)
+            .Select(_ => GenerateRandomNumber(0, 100))
+            .Select(number => (number.ToString(), number % 2 == 0 ? "yes" : "no"));
 
-            Console.WriteLine($"Question: {radomNumber}");
-            var answer = Console.ReadLine();
-            var correctAnswer = radomNumber % 2 == 0 ? "yes" : "no";
-
-            if (answer != correctAnswer)
-            {
-                Console.WriteLine(
-                    $"""
-                    '{answer}' is wrong answer ;(. Correct answer was '{correctAnswer}'.
-                    Let's try again, {name}!
-                    """
-                );
-                return;
-            }
-
-            Console.WriteLine("Correct!");
-        }
-
-        Console.WriteLine($"Congratulations, {name}!");
+        Engine.Start([.. parameter.Take(3)], name);
     }
 
     private static int GenerateRandomNumber(int min, int max)
