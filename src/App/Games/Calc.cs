@@ -1,5 +1,3 @@
-using App;
-
 namespace App.Games;
 
 public static class Calc

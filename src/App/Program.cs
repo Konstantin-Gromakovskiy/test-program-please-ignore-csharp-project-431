@@ -10,6 +10,7 @@ public static class Program
             1 - Greet
             2 - Even
             3 - Calc
+            4 - GCD
             0 - Exit
             """
         );
@@ -30,6 +31,11 @@ public static class Program
             case "3":
             {
                 Games.Calc.Start();
+                break;
+            }
+            case "4":
+            {
+                Games.Gcd.Start();
                 break;
             }
             case "0":
