@@ -27,7 +27,7 @@ public static class Engine
                 Console.WriteLine(
                     $"""
                     '{input}' is wrong answer ;(. Correct answer was '{parameter.rightAnswer}'
-                    Let's try again, {name}
+                    Let's try again, {name}!
                     """
                 );
                 return;
