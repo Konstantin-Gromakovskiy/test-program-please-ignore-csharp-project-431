@@ -16,6 +16,7 @@ public static class Program
             0 - Exit
             """
         );
+        Console.Write("Your choice: ");
         var input = Console.ReadLine();
 
         switch (input)
