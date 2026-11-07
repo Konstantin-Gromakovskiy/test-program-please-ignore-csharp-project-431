@@ -34,6 +34,7 @@ make run
 Please enter the game number and press Enter.
 1 - Greet
 2 - Even
+3 - Calc
 0 - Exit
 ```
 
@@ -44,6 +45,12 @@ Please enter the game number and press Enter.
 Пользователю показывается случайное число, нужно ответить `yes`, если число чётное, и `no` — если нечётное. Чтобы победить, нужно дать три правильных ответа подряд.
 
 [![asciicast](https://asciinema.org/a/dym0tcmRGUCHAfFR.svg)](https://asciinema.org/a/dym0tcmRGUCHAfFR)
+
+#### Калькулятор (Calc)
+
+Пользователю показывается случайное выражение со сложением, вычитанием или умножением, например `47 + 25`, нужно ввести его результат. Чтобы победить, нужно дать три правильных ответа подряд.
+
+<!-- Добавьте запись asciinema игры Calc -->
 
 ---
 

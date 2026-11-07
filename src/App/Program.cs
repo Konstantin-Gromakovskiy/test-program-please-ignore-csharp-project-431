@@ -9,6 +9,7 @@ public static class Program
             """
             1 - Greet
             2 - Even
+            3 - Calc
             0 - Exit
             """
         );
@@ -26,6 +27,11 @@ public static class Program
                 Games.Even.Start();
                 break;
             }
+            case "3":
+            {
+                Games.Calc.Start();
+                break;
+            }
             case "0":
             {
                 Console.WriteLine("Программа завершена");
@@ -33,7 +39,7 @@ public static class Program
             }
             default:
             {
-                Console.WriteLine("Не известный тип ответа");
+                Console.WriteLine("Неизвестный тип ответа");
                 return;
             }
         }
