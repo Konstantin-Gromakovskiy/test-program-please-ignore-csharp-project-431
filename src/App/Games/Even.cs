@@ -1,4 +1,4 @@
-namespace App.games;
+namespace App.Games;
 
 public static class Even
 {
