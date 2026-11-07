@@ -11,6 +11,7 @@ public static class Program
             2 - Even
             3 - Calc
             4 - GCD
+            5 - Progression
             0 - Exit
             """
         );
@@ -36,6 +37,11 @@ public static class Program
             case "4":
             {
                 Games.Gcd.Start();
+                break;
+            }
+            case "5":
+            {
+                Games.Progression.Start();
                 break;
             }
             case "0":
