@@ -23,7 +23,7 @@ public static class Program
             }
             case "2":
             {
-                games.Even.Start();
+                Games.Even.Start();
                 break;
             }
             case "0":
